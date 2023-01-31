@@ -1,10 +1,14 @@
 import "./App.css";
 import Section from "./components/Section";
 
-const tab = [{ category, images }];
-const tab2 = tab.map((elem, index));
-{
-  console.log(tab2);
-}
+const Section = () => {
+  return (
+    <div>
+      {data.map((item) => {
+        console.log(item);
+      })}
+    </div>
+  );
+};
 
-export default App;
+export default Section;

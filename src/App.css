@@ -3,13 +3,13 @@ body {
   background-color: black;
 }
 
-h1 {
+.category {
   color: white;
   font-size: 30px;
   font-weight: bold;
 }
 
-main {
+.images {
   /* height: 1000px; */
   padding-top: 50px;
   padding-bottom: 50px;

@@ -1,16 +1,12 @@
-
-import data from "../data.json";
-
+import data from "./data.json";
 const Section = () => {
   return (
-  {data.map((list) =>{
-    return (
-      <DataList
-      category={list.category}
-      images={list.images}
-      />
-    );
-    })}
-  )};
+    <div>
+      {data.map((item) => {
+        console.log(item);
+      })}
+    </div>
+  );
+};
 
 export default Section;
