@@ -1,21 +1,30 @@
+/* IMPORT DE LA FONT ROBOTO VIA GOOGLEFONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+/* COULEUR DU FOND EN NOIR */
 body {
-  font-family: "Roboto";
   background-color: black;
+  font-family: "Roboto", sans-serif;
 }
-
-.category {
+/* POLICE ET COULEUR DES TITRES CATEGORY */
+h2 {
   color: white;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
 }
-
-.images {
-  /* height: 1000px; */
-  padding-top: 50px;
+/* MARGE INTERIEUR GAUCHE*/
+.App {
+  padding-left: 50px;
   padding-bottom: 50px;
-  width: 1100px;
-  margin: 0 auto;
+}
+/* SCROLLBAR POUR DEFILEMENT DES IMAGES  */
+.images-container {
   display: flex;
-
-  /* border: solid black 1px; */
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* BLOQUE LE DEFILEMENT */
+.images-container::-webkit-scrollbar {
+  display: none;
 }
